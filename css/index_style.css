@@ -1,0 +1,438 @@
+@import url('all_style.css');
+
+
+/* -======================== right ======================= */
+/* ------banner-------- */
+html{
+    scroll-behavior: smooth;
+  }
+
+@media (min-width: 769px) {
+    .banner{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    }
+    .banner-text-position{
+        position: absolute;
+        top: 10%;
+        right: 5%;
+    }
+}
+
+
+.banner-video{
+    object-fit: cover;
+}
+
+.banner-text-position{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-right: 30px;
+}
+
+.banner-text-position span::before{
+    display: block;
+	content: "";
+	width: 60px;
+	height: 1px;
+	background: #d0d0d0;
+	position: absolute;
+	top: 10px;
+	left: -50px;
+	transform: rotate(-60deg);
+}
+
+.banner img{
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    animation: viewmore 1s linear infinite;
+}
+
+@keyframes viewmore {
+    0%{
+        bottom: 30px;
+    }
+    50%{
+        bottom: 50px;
+    }
+    100%{
+        bottom: 30px;
+    }
+}
+
+
+/* ======================= container ===================== */
+/* ---------------memory------------------ */
+
+.memory{
+    padding: 130px 0;
+    position: relative;
+    letter-spacing: 3px;
+    width: 90%;
+    margin: 0 auto;
+    /* border: red solid 1px; */
+}
+
+.memory p::before{
+    content: '“';
+    font-size: 80px;
+
+    position: absolute;
+    top: 60px;
+    left: -70px;
+}
+
+.memory p::after{
+    content: '”';
+    font-size: 80px;
+
+    position: absolute;
+    bottom: 20px;
+    right: -70px;
+}
+
+/* -----------金工課程--------------- */
+.index-course{
+    /* border: solid black 1px; */
+    position: relative;
+    max-width: 100%;
+}
+
+.index-course ul{
+    max-width: 100%;
+    height: 300px;
+    margin: 0 auto;
+
+    display: flex;
+    /* border: solid white 3px; */
+}
+
+.index-course li{
+    background-size: cover;
+    background-position: center center;
+    transition: .5s;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.index-ring{
+    background-image: url('../source/product/ring/four_ring.jpg');
+}
+
+
+.index-pendant{
+    background-image: url('../source/product/pendant/square.jpg');
+}
+
+.index-bracelet{
+    background-image: url('../source/product/bracelet/twist.jpg');
+}
+
+.tex {
+    background-color: rgba(153, 153, 139,.3);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-top: 232px;
+    letter-spacing: 1px;
+}
+
+
+
+/* ====== 大於769px ====== */
+@media (min-width:769px) {
+    .index-course li:hover{
+        flex-grow: 5;
+    }
+}
+
+.index-course ul + p{
+    /* border: solid black 1px; */
+    width: 500px;
+    padding-top: 30px;
+}
+
+.btn{
+    width: 98px;
+    height: 38px;
+    border: 2px solid #333;
+    
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.index-course a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(178,144,193);
+    text-align: center;
+    line-height: 40px;
+    
+    /* box-shadow: 2px 2px black; */
+
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+
+    /* transition: 2s; */
+    animation: 1.1s 1s index_btn infinite;
+    /* animation: 3s index_btn; */
+}
+
+@keyframes index_btn{
+    0%{
+        transform:translate(0px,0px);
+    }
+	50%{
+        transform:translate(-3px,-3px);
+    }
+	100%{
+        transform:translate(0px,0px);
+    }
+}
+
+.index-course a:hover{
+    transform:translate(0px,0px);
+    background-color: rgba(108, 56, 133, 1);
+}
+
+/* ----------最新消息----------- */
+
+.news{
+    /* border: red solid 1px; */
+    padding-top: 130px;
+}
+
+/* --------- 大於769px ---------- */
+@media (min-width:769px) {
+    .flex-news{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        /* background-color: rgba(225,225,197,.4); */
+    }
+    .news-img img{
+        width: 400px;
+        border-radius: 10px;
+        display: block;
+        position: relative;
+        left: 15%;
+    }
+    .news-text{
+        background-color: rgba(225,225,197,.4);
+        padding: 70px 30px 70px 100px;
+        letter-spacing: 2px;
+        border-radius: 20px;
+        z-index: -1;
+        position: relative;
+        top: 70px;
+    }
+    
+}
+
+
+/* ================ 小於575.98 =============== */
+@media (max-width:575.98px) {
+      /* ----- banner ----- */
+      .banner{
+        width: 100%;
+        height: calc(100vh - 60px);
+        position: relative;
+    }
+    .banner-text-position{
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 70%;
+    }
+
+
+    /* -------- memory ------- */
+    .memory p{
+        height: 330px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .memory p::before{
+        content: '“';
+        font-size: 40px;
+    
+        position: absolute;
+        top: 170px;
+        left: -30px;
+    }
+    
+    .memory p::after{
+        content: '”';
+        font-size: 40px;
+    
+        position: absolute;
+        bottom: 160px;
+        right: -30px;
+    }
+
+    /* --------- index-course --------- */
+    .index-course ul{
+        height: 900px;
+
+        flex-direction:column
+        /* border: solid white 3px; */
+    }
+    
+    .index-ring{
+        flex-grow: 1;
+    }
+    
+    .index-pendant{
+        flex-grow: 1;
+    }
+    
+    .index-bracelet{
+        flex-grow: 1;
+    }
+    .index-course ul + p{
+        width: 100%;
+    }
+    
+    .btn{
+        position: absolute;
+        bottom: -48px;
+        right: 0px;
+    }
+    
+    .index-course a{
+        position: absolute;
+        bottom: -46px;
+        right: 2px;
+        animation: 1.1s 1s index_btn infinite;
+        /* animation: 3s index_btn; */
+    }
+
+    /* ----------- news ----------- */
+    .flex-news{
+        background-color: rgba(225,225,197,.4);
+    }
+    .news-img{
+         width: 100%;
+    }
+    .news img{
+        max-width: 100%;
+        display: block;
+    }
+    .news-text{
+        padding: 30px;
+        letter-spacing: 2px;
+        /* border-radius: 20px; */
+        z-index: -1;
+    }
+}
+
+/* ================= 576 ~ 768.98 ================== */
+@media (min-width:576px) and (max-width:768.98px) {
+      /* ----- banner ----- */
+    .banner{
+        width: 100%;
+        height: calc(100vh - 60px);
+        position: relative;
+    }
+    .banner-text-position{
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 70%;
+    }
+
+
+    /* -------- memory ------- */
+    .memory p{
+        height: 330px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .memory p::before{
+        content: '“';
+        font-size: 40px;
+    
+        position: absolute;
+        top: 190px;
+        left: -30px;
+    }
+    
+    .memory p::after{
+        content: '”';
+        font-size: 40px;
+    
+        position: absolute;
+        bottom: 180px;
+        right: -30px;
+    }
+
+    /* --------- index-course --------- */
+    .index-course ul{
+        height: 900px;
+
+        flex-direction:column
+        /* border: solid white 3px; */
+    }
+    
+    .index-ring{
+        flex-grow: 1;
+    }
+    
+    .index-pendant{
+        flex-grow: 1;
+    }
+    
+    .index-bracelet{
+        flex-grow: 1;
+    }
+    .index-course p{
+        width: 100%;
+    }
+    
+    .btn{
+        position: absolute;
+        bottom: -48px;
+        right: 0px;
+    }
+    
+    .index-course a{
+        position: absolute;
+        bottom: -46px;
+        right: 2px;
+        animation: 1.1s 1s index_btn infinite;
+        /* animation: 3s index_btn; */
+    }
+
+    /* ----------- news ----------- */
+    .flex-news{
+        background-color: rgba(225,225,197,.4);
+    }
+    .news-img{
+         width: 100%;
+    }
+    .news img{
+        max-width: 100%;
+        display: block;
+    }
+    .news-text{
+        padding: 30px;
+        letter-spacing: 2px;
+        /* border-radius: 20px; */
+        z-index: -1;
+    }
+  }
+

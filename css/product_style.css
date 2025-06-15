@@ -1,0 +1,200 @@
+@import url('all_style.css');
+
+/* 主選單強調 */
+.main-list .nav-product{
+    font-weight: bold;
+    border-left: 3px solid rgb(153, 153, 139);
+}
+
+
+
+/* ================ 小於768.98 =================== */
+@media (max-width:768.98px) {
+    /* ------ top ------ */
+    .product-bg{
+        height: 140px;
+    }
+    .product-bg p{
+        padding-top: 10px;
+        letter-spacing: 2px;
+    }
+}
+
+/* ================ 大於769 =================== */
+@media (min-width:769px) {
+    /* ------- top --------- */
+    .product-bg{
+        height: 200px;
+    }
+    .product-bg p{
+        padding-top: 80px;
+        letter-spacing: 3px;
+    }
+
+}
+
+.product-bg{
+    background-image: url('../source/top_product2.jpg');
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    clear: both;
+}
+
+.product-bg p {
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    text-shadow: rgba(0, 0, 0, 0.774) 2px 2px 2px;
+    float: right;
+}
+
+@media (max-width:575.98px) {
+    .product-bg p {
+        font-size: 14px;
+    }
+    
+}
+
+
+/* ========================= main ===================*/
+
+
+/* ------------- 主分類------------- */
+.product-class {
+    /* border: #333 solid 1px; */
+    margin: 0 auto;
+    width: 70%;
+    /* width: 540px; */
+    /* height: 40px; */
+    padding-top: 70px;
+    z-index: 2;
+    display: flex;
+}
+.product-class > li{
+    width: calc((100% - 20px) / 3); 
+    margin-right: 10px;
+    position: relative;
+}
+.product-class > li:nth-child(3){
+    margin-right: 0;
+}
+  
+.product-class li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(225, 225, 197, 1);
+}
+
+
+  /* ------------- 子分類 ------------- */
+.product-class ol{
+    width: 100%;
+    /* width: 160px; */
+    position: absolute;
+    display: none;
+
+    z-index: 2;
+}
+  
+.product-class li > ol{
+    top: 40px;
+    left: 0px;
+} 
+  
+.product-class li:nth-child(2) ol{
+    top: 40px;
+    left: 0px;
+}
+
+.product-class ol li a{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #333;
+}
+  
+  /*  主分類hover */
+.product-class li a:hover{
+    background-color: rgba(190, 190, 127, 1);
+    color: #333;
+    font-weight: bold;
+}
+
+.product-class li:hover ol{
+    display: block;
+}
+  
+/* 子分類hover */
+.product-class ol li a:hover{
+    background-color: rgba(190, 190, 127, .6);
+    color: #333;
+    font-weight: bold;
+}
+
+/* ======================= 商品 ========================== */
+
+.container{
+    text-align: center;
+}
+
+.product-list{
+    padding-top: 30px;
+}
+
+.product-list a{
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.product-list img{
+    max-width: 100%;
+    object-fit: cover;
+    transition: .5s;
+    display: block;
+} 
+.product-list img:hover{
+    transform: scale(1.2);
+}
+
+
+.price{
+    color: rgba(209, 194, 55, 1);
+    font-weight: bold;
+}
+/* ================ 大於769 =================== */
+/* @media (min-width:769px) { */
+    .product-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    
+    .product-list li{
+        padding-bottom: 30px;
+        width: 90%;
+        margin: 0 auto;
+        /* border: blue solid 1px; */
+    }
+/* } */
+
+/* ================ 小於768.98 =================== */
+@media (max-width:768.98px) {
+    .product-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .product-list li{
+        width: calc((100% - 20px) / 2);
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+    .product-list li:nth-child(2n){
+        margin-right: 0;
+    }
+}
+
+
+

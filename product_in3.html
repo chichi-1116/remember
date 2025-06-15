@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留憶金工</title>
+    <link rel="stylesheet" href="./js/slick/slick.css">
+    <link rel="stylesheet" href="./js/slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/product_in_style.css">
+    <link rel="icon" href="./source/R.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- -----------left-------------- -->
+    <nav class="main-sel">
+        <div class="main-sel-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./source/logo2.png" alt="" class="pc-logo">
+                    <img src="./source/logo1.png" alt="" class="sp-logo">
+                </a>
+            </div>
+            <!-- 漢堡checkbox -->
+            <input type="checkbox" id="meun_control">
+            <!-- 漢堡 -->
+            <div class="hamburger">
+                <label for="meun_control" class="meun_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <!-- 漢堡出現介面 = 主選單內容 -->
+
+            <div class="main-sel-transparent">
+
+                <ul class="main-list">
+                    <li><a href="about.html" class="nav-about">關於我們</a></li>
+                    <li><a href="product.html" class="nav-product">所有商品</a></li>
+                    <li><a href="course.html" class="nav-course">金工課程</a></li>
+                    <li><a href="course.html#reserve" class="nav-reserve">線上預約</a></li>
+                    <li><a href="design.html" class="nav-design">訂製設計</a></li>
+                    <li class="search">
+                        <input type="text" placeholder="search...">
+                    </li>
+                </ul>
+
+                <ul class="main-icon">
+                    <li>
+                        <a href="member.html">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- ---------------left end---------------- -->
+
+
+    <!-- -----------------right--------------------- -->
+    <div class="right">
+        <div class="container">
+
+            <!-- --------------- top 商品 ---------------- -->
+            <div class="top">
+                <!------------- breadcrumb -------------->
+                <div class="breadcrumb">
+                    <a href="product.html">所有商品</a>
+                    >
+                    <a href="product.html">女款</a>
+                    >
+                    <a href="product.html">戒指</a>
+                </div>
+                <!-- -------------- 商品 ------------ -->
+                <div class="product-in-main">
+                    <div class="product-in-photo">
+                        <div class="photo-large">
+                            <img src="./source/product/ring/003.jpg" alt="" class="large-pic">
+                        </div>
+
+                        <div class="photo-thumbs">
+                            <ul class="slider responsive">
+                                <li class="photo-small">
+                                    <img src="./source/product/ring/003.jpg" alt="">
+                                </li>
+                                <li class="photo-small">
+                                    <img src="./source/product/ring/flower2.jpg" alt="">
+                                </li>
+                                <li class="photo-small">
+                                    <img src="./source/product/ring/flower3.jpg" alt="">
+                                </li>
+                                <li class="photo-small">
+                                    <img src="./source/product/ring/flower4.jpg" alt="">
+                                </li>
+                                <!-- <li class="photo-small">
+                                    <img src="./source/product/ring/s4.jpg" alt="">
+                                </li> -->
+                            </ul>
+
+                            <!-- <i class="fa fa-angle-right" aria-hidden="true"></i> -->
+                        </div>
+                    </div>
+
+                    <!-- 商品介紹右邊 -->
+                    <div class="product-in-right">
+                        <ul class="product-in-text">
+                            <li>
+                                <h2 prd_id="003">花邊</h2>
+                            </li>
+                            <li>
+                                <h2 class="price">1280</h2>
+                            </li>
+                            <li>
+                                擁有獨特的花邊設計，溫柔婉約印象，具有氣質的一款超人氣設計！
+                                <br>
+                                <br>
+                                表面加工：
+                                <br>
+                                SHINY亮面處理：如鏡面般打磨表面的加工。
+                                <br>
+                                MATTE啞光處理：在表面產生細微划痕並去除光澤的處理。
+                            </li>
+                        </ul>
+
+                        <ul class="product-in-buy">
+                            <li>尺寸</li>
+                            <li>
+                                <select id="size">
+                                    <option value="#5">#5</option>
+                                    <option value="#6">#6</option>
+                                    <option value="#7">#7</option>
+                                    <option value="#8">#8</option>
+                                    <option value="#9">#9</option>
+                                    <option value="#10">#10</option>
+                                    <option value="#11">#11</option>
+                                    <option value="#12">#12</option>
+                                    <option value="#13">#13</option>
+                                </select>
+                            </li>
+                            <li>表面加工</li>
+                            <li>
+                                <select id="type">
+                                    <option value="亮面處理">亮面處理</option>
+                                    <option value="啞光處理">啞光處理</option>
+                                </select>
+                            </li>
+                            <li>數量</li>
+                            <li class="num">
+                                <select id="num">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                </select>
+                            </li>
+                            <li>
+                                <a href="cart.html" class="prd-btn">
+                                    <i class="fas fa-shopping-cart"></i>加入購物車
+                                </a>
+                                <i class="far fa-heart"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 商品介紹 -->
+            <div class="product-basic">
+                <div class="product-basic-title">
+                    <h2>商品介紹</h2>
+                    <hr>
+                </div>
+                <div class="product-basic-info">
+                    <div class="product-basic-info-1">
+                        <h2>| 客製化訂製設計 |</h2>
+                        <p>專屬於你(妳)的飾品
+                            <br><br>
+                            在內圍刻上紀念日、姓名、圖樣，來留下回憶吧。
+                        </p>
+                        <div class="square-img">
+                            <img src="./source/product/pendant/square.jpg" alt="">
+                        </div>
+
+                        <a href="design.html">聯絡我們</a>
+                    </div>
+
+                    <div class="product-basic-info-2">
+                        <h2>| 保養方法 |</h2>
+                        <ul>
+                            <li>
+                                請盡量避免以下事項：
+                                <br><br>
+                            </li>
+                            <li>
+                                1. 洗澡、游泳、海水、打掃清潔及擦保養品...等，這些情況裡含有一些可能會影響飾品光澤的成分。
+                            </li>
+                            <li>
+                                2. 含有硫磺的溫泉，會使金屬變色，泡溫泉不宜配戴 。
+                            </li>
+                            <li>
+                                3. 運動等會大量流汗的情況，因為人體汗液中含有使金屬變色的物質。
+                            </li>
+                            <li>
+                                4. 避免與堅硬物碰撞摩擦產生刮痕。
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="product-basic-info-3">
+                        <h2>| 退換換貨政策 |</h2>
+                        <ul>
+                            <li>
+                                1. 洗澡、游泳、海水、打掃清潔及擦保養品...等，這些情況裡含有一些可能會影響飾品光澤的成分。
+                            </li>
+                            <li>
+                                2. 現貨商品自購買日期七天內保持商品包裝完整，可辦理退換貨。
+                            </li>
+                            <li>
+                                3. 客製化戒指可免費修改戒圍乙次（限±2號)。
+                            </li>
+                            <li>
+                                4. 非商品本身瑕疵，如人為因素需寄回退換貨，請自行承擔來回運費。
+                            </li>
+                            <li>
+                                5.如對上述規範有任何疑問，請與客服聯繫。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- ------------------footer---------------- -->
+        <footer>
+            <div class="footer-contain">
+                <div class="footer-text">
+                    <section>
+                        <i class="fas fa-phone"></i>
+                        <span>電話：02-4898937</span>
+                    </section>
+
+                    <section>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>地址：新北市新莊區樹新路</span>
+                    </section>
+
+                    <section>
+                        <i class="fas fa-envelope"></i>
+                        <span>客服信箱：remebrance22@gmail.com</span>
+                    </section>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <p class="reference">
+                本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。<br>
+                參考資源：https://ringram.jp/course/engraving/
+            </p>
+        </footer>
+
+        <div class="js-back-to-top">
+            <img src="./source/top.png" alt="">
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- slick -->
+    <script src="./js/slick/slick.min.js"></script>
+    <script src="./js/all.js"></script>
+    <script src="./js/cart.js"></script>
+    <!-- 回到頂端按鈕 start -->
+    <script>
+        // ===== 點擊換縮圖圖片 ===============
+        function showLarge(e) {
+            // let img = e.target;
+            // alert(img.src);
+            document.getElementsByClassName("large-pic")[0].src = e.target.src;
+        }
+
+        function init() {
+            let smalls = document.getElementsByClassName("photo-small");
+            for (let i = 0; i < smalls.length; i++) {
+                smalls[i].onclick = showLarge;
+            }
+        }
+
+        window.addEventListener("load", init, false);
+
+        // ===== slick 輪播套件 =======
+        $(document).ready(function () {
+            $(".responsive").slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 6,
+                slidesToScroll: 6,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 1500,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 5,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 1270,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 631,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 575.98,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4
+                        }
+                    },
+                    {
+                        breakpoint: 386,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    }
+                ]
+            });
+        });
+
+    </script>
+</body>
+
+</html>

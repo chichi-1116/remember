@@ -1,0 +1,56 @@
+@import url(all_style.css);
+
+.top span:nth-child(2)::before{
+	position: absolute;
+	top: 100px;
+	left: 45%;
+}
+
+@media (max-width:575.98px) {
+    .top{
+        width:300px;
+    }
+    .top span:nth-child(2)::before{
+        position: absolute;
+        top: 100px;
+        left: 100px;
+    }
+}
+
+@media (min-width:576px) and (max-width:768.98px) {
+    .top span:nth-child(2)::before{
+        position: absolute;
+        top: 100px;
+        left: 40%;
+    }
+}
+
+
+
+/* ========= 內容 =========== */
+
+.container ul{
+    text-align: center;
+    padding-top: 100px;
+}
+.container h1{
+    color: rgba(209, 194, 55, 1);
+    padding-bottom: 50px;
+}
+.container h2{
+    padding-bottom: 100px;
+}
+
+/* 訂單紀錄&返回購物 */
+.container ul li:nth-child(3) a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    padding-bottom: 30px;
+}
+
+.container ul li:nth-child(3) i{
+    line-height: 26px;
+    padding-right: 5px;
+}

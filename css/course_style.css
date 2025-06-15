@@ -1,0 +1,293 @@
+@import url('all_style.css');
+
+/* 主選單強調邊框 */
+.-on{
+    font-weight: bold;
+    border-left: 3px solid rgb(153, 153, 139);
+}
+
+
+
+
+/* -------------------top--------------------- */
+@media (max-width:575.98px) {
+    .top{
+        width:310px;
+    }
+    .top span:nth-child(2)::before{
+        position: absolute;
+        top: 100px;
+        left: 90px;
+    }
+}
+
+@media (min-width:576px) and (max-width:768.98px) {
+    .top span:nth-child(2)::before{
+        position: absolute;
+        top: 100px;
+        left: 38%;
+    }
+}
+
+@media (min-width:769px) {
+    .top span:nth-child(2)::before{
+        position: absolute;
+        top: 100px;
+        left: 42%;
+    }
+} 
+
+
+/* ----------------------main---------------------------- */
+
+/* ------------ 課程須知 ----------------- */
+.course-notice{
+    padding-top: 70px;
+}
+
+
+.course-notice hr{
+    border-top: solid #333 solid;
+}
+
+
+.course-notice ul{
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.course-notice li{
+    padding-bottom: 5px;
+}
+
+@media (max-width:575.98px) {
+    .course-notice ul{
+        padding-left: 0;
+    }
+    .course-notice li{
+        padding-bottom: 8px;
+    }
+}
+
+/* --------------- 詳細課程 -------------------*/
+.course-container{
+    text-align: center;
+    /* border: blue solid 1px; */
+    padding-top: 70px;
+    width: 100%;
+    overflow: hidden;
+}
+.course-container h2{
+    text-align: left;
+}
+
+.course-list{
+    display: flex;
+    /* border: green solid 1px; */
+    width: 100%;
+    justify-content: center;
+}
+
+.course-list li{
+    margin-right: 10px;
+    /* border: red solid 1px; */
+    width: 300px;
+    height: auto;
+    position: relative;
+}
+
+.course-list li:hover{
+    background-color: #e6e6e6;
+}
+
+.course-list a{
+    display: block;
+    width: 100%;
+    /* height: 100%;  */
+    /* border: purple solid 1px; */
+}
+
+.course-container img{
+    display: block;
+    max-width: 100%;
+    height: auto;    
+}
+
+
+.course-list h3{
+    /* border: brown solid 5px; */
+    padding: 10px 0;
+    color: rgba(209, 194, 55, 1);
+    /* font-size: 20px; */
+    font-weight: bold;
+    width: 100%;
+}
+
+@media (max-width:575.98px) {
+    .course-list{
+        display: inline-block;
+        width: 85%;
+    }
+    .course-list li{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+  /* =================== 彈出視窗 ==================== */
+  .hand-merit-fade{
+      width: 60%;
+      border: rgba(211, 211, 211, .35) solid 10px;
+      border-radius: 20px;
+      position: fixed;
+      top: 5%;
+      left: 0;
+      right: 0;
+      bottom: 5%;
+      margin: auto;
+      padding: 20px;
+      background-color: rgb(255, 255, 255);
+      overflow: auto;
+  }
+
+  @media (max-width:768.98px) {
+    div.hand-merit-fade{
+        top: 100px;
+    }
+  }
+
+
+  .hand-merit-fade-header{
+      position: relative;
+  }  
+
+  .hand-merit-fade-body{
+      width: 100%;
+      /* margin-left: 20px; */
+  }
+
+    /* 叉叉 */
+  .hand-merit-fade button{
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      margin: auto;
+      background-color: transparent;
+      font-weight: bold;
+      border: 0;
+      font-size: 30px;
+      opacity: .2;
+      color: #333;
+      width: 40px;
+  }
+  
+  .hand-merit-fade h2{
+      text-align: center;
+      color:rgba(190, 190, 127, 1);
+  }
+
+  .hand-merit-fade h3{
+      color:rgba(190, 190, 127, 1);
+      font-size: 20px;
+      font-weight: bold;
+  }
+
+  .hand-merit-fade li{
+      width: 100%;
+      margin-bottom: 10px;
+      /* border: green solid 1px; */
+  }
+
+  .hand-merit-fade li h3{
+    margin-bottom: 10px;
+}
+
+/* 示範照片 */
+  .hand-merit-fade img{
+      width: 200px;
+      display: block;
+      margin-right: 10px;
+      margin-bottom: 10px;
+  }
+
+  .sample-img{
+      display: flex;
+      flex-wrap: wrap;
+  } 
+
+  /* 6 預約資訊 */
+  .hand-merit-fade-body form{
+      border: #333 solid 1px;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      position: relative;
+  }
+  .hand-merit-fade-body form ul{
+      width: 50%;
+  }
+
+  .hand-merit-fade-body li:nth-child(6) li{
+      width: 100%;
+  }
+  .hand-merit-fade input{
+      padding: 10px;
+      max-width: 100%;
+      border: 0;
+      border-bottom: 1px solid #333;
+      /* width: 80%; */
+  }
+
+
+  @media (max-width:768.98px) {
+    .hand-merit-fade-body form{
+        display: inline-block;
+        width: 100%;
+        padding-bottom: 60px;
+    }
+  }
+
+
+  /* 時段 */
+  .hand-merit-fade select{
+      width: 100px;
+      height: 40px;
+      border: 0;
+      border-bottom: 1px solid #333;
+  }
+
+  /* 提交 */
+  .hand-merit-fade-body li .submit{
+      display: block;
+      width: 100px;
+      height: 40px;
+      border: 0;
+      background-color: rgb(178,144,193);
+      color: white;
+      margin-top: 10px;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      border-bottom: 0;
+      border-radius: 0;
+      cursor: pointer;
+  }
+
+  .hand-merit-fade-body li .submit:hover{
+    background-color: rgba(108, 56, 133, 1);
+  }
+
+/* 燈箱遮罩 */
+  .black{
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(0 , 0, 0, .5);
+
+      display: none;
+  }

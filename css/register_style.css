@@ -1,0 +1,132 @@
+@import url('all_style.css');
+
+.top span:nth-child(2)::before{
+	position: absolute;
+	top: 100px;
+	left: 40%;
+}
+
+@media (max-width:575.98px) {
+    .top{
+        width:300px;
+    }
+    .top span:nth-child(2)::before{
+        position: absolute;
+        top: 100px;
+        left: 75px;
+    }
+}
+
+@media (min-width:576px) and (max-width:768.98px) {
+    .top span:nth-child(2)::before{
+        position: absolute;
+        top: 100px;
+        left: 35%;
+    }
+}
+/* ------------------- right ------------------------ */
+
+form{
+    border:  black solid 1px;
+    margin-top: 50px;
+    padding: 50px 0 80px;
+    position: relative;
+}
+.sp-form{
+    padding: 0 0 80px;
+}
+
+table{
+    /* border:  green solid 5px; */
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+tr{
+    line-height: 40px;
+    /* border:  red solid 1px; */
+    height: 40px;
+}
+
+tr[class='input'] input{
+    width: 300px;
+    padding: 10px;
+    border: 0;
+    border-bottom: #333 solid 1px;
+}
+
+tr:nth-child(6) input{
+    padding: 5px;
+}
+
+form .btn{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(178,144,193);
+    line-height: 40px;
+    text-align: center;
+    border: 0;
+
+    position: absolute;
+    right: 50%;
+    bottom: 20px;
+    transform: translate(50%, 0);
+    cursor: pointer;
+}
+
+form .btn:hover{
+    background-color: rgba(108, 56, 133, 1);
+}
+
+.sp-form{
+    display: none;
+}
+
+
+
+@media (max-width:768.98px) {
+    form.pc-form{
+        display: none;
+    }
+    form.sp-form{
+        display: block;
+        width: 100%;
+        border: #333 solid 1px;
+        margin-top: 50px;
+    }
+    form.sp-form ul{
+        width: 300px;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    form.sp-form li{
+        padding-bottom: 10px;
+    }
+    form.sp-form li[class='input'] input{
+        padding: 10px;
+        width: 300px;
+        border: 0;
+        border-bottom: #333 solid 1px;
+    }
+    form.sp-form li[class='birthday'] input{
+        padding: 5px;
+    }
+}
+
+@media (max-width:575.98px) {
+    form.sp-form li[class='input'] input{
+        width: 200px;
+    }
+    form.sp-form ul{
+        width: 250px;
+    }
+}
+
+
+
+
+
+

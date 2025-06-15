@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車 | 留憶金工</title>
+
+    <link rel="stylesheet" href="./css/cart_style.css">
+    <link rel="icon" href="./source/R.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/10f319606c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- -----------left-------------- -->
+    <nav class="main-sel">
+        <div class="main-sel-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./source/logo2.png" alt="" class="pc-logo">
+                    <img src="./source/logo1.png" alt="" class="sp-logo">
+                </a>
+            </div>
+            <!-- 漢堡checkbox -->
+            <input type="checkbox" id="meun_control">
+            <!-- 漢堡 -->
+            <div class="hamburger">
+                <label for="meun_control" class="meun_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <!-- 漢堡出現介面 = 主選單內容 -->
+
+            <div class="main-sel-transparent">
+
+                <ul class="main-list">
+                    <li><a href="about.html" class="nav-about">關於我們</a></li>
+                    <li><a href="product.html" class="nav-product">所有商品</a></li>
+                    <li><a href="course.html" class="nav-course">金工課程</a></li>
+                    <li><a href="course.html#reserve" class="nav-reserve">線上預約</a></li>
+                    <li><a href="design.html" class="nav-design">訂製設計</a></li>
+                    <li class="search">
+                        <input type="text" placeholder="search...">
+                    </li>
+                </ul>
+
+                <ul class="main-icon">
+                    <li>
+                        <a href="member.html">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- ---------------left end---------------- -->
+    <div class="right">
+        <!---------------- top ----------------->
+        <div class="top member-bg">
+            <h1>
+                <span class="h1">購物車</span>
+                <span>
+                    <span>Cart</span>
+                </span>
+            </h1>
+        </div>
+
+
+        <!-- -----------------container------------------- -->
+        <div class="container">
+            <!-- ----------- cart list ---------- -->
+            <form action="">
+                <div class="cart-list">
+                    <ul class="pc-cart-header">
+                        <!-- <li></li> -->
+                        <li>商品資訊</li>
+                        <!-- <li>尺寸</li> -->
+                        <li>單價</li>
+                        <li>數量</li>
+                        <!-- <li>合計</li> -->
+                        <li>操作</li>
+                    </ul>
+                    <ul class="sp-cart-header">
+                        <li>商品清單</li>
+                    </ul>
+
+
+                    <!-- <ul class="cart-content">
+                        <li class="cart-content-flex">
+                            <div class="img">
+                                <img src="./source/product/ring/six_edge.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <p>平行六角形</p>
+                                <p>#7</p>
+                            </div>
+                        </li>
+                        <li class="price">
+                            <p>NT$1480</p>
+                        </li>
+                        <li class="count">
+                            <div><span class="num-jian">-</span></div>
+                            <div><input type="text" class="input-num" value="1" /></div>
+                            <div><span class="num-jia">+</span></div>
+                        </li>
+                        <li class="operate">
+                            <a href="#" class="del">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+                            <a href="#">
+                                <i class="far fa-heart"></i>
+                            </a>
+                        </li>
+                    </ul> -->
+                </div>
+            </form>
+            <div class="cart-middle">
+                <div class="cart-coupon">
+                    <div class="coupon">
+                        <button class="coupon_btn">折價券</button>
+                        <input class="coupon_num" placeholder="請輸入優惠代碼...">
+                    </div>
+                    <div class="delivery">
+                        <span>運送方式</span>
+                        <span>宅配 NT$80</span>
+                    </div>
+                </div>
+
+                <div class="cart-total-price">
+                    <ul>
+                        <li>
+                            <span>商品總計</span>
+                            <span>NT$2960</span>
+                        </li>
+                        <li>
+                            <span>折抵總計</span>
+                            <span>-NT$0</span>
+                        </li>
+                        <li>
+                            <span>運費</span>
+                            <span>NT$80</span>
+                        </li>
+                        <li>
+                            <span>總金額</span>
+                            <span>NT$3040</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cart-bottom">
+                <div class="buyer-info">
+                    <div class="buyer-info-title">
+                        收件資訊
+                    </div>
+                    <ul>
+                        <li>收件人</li>
+                        <li>
+                            <input type="name" class="user-name" name="name" placeholder="請輸入真實姓名">
+                        </li>
+                        <li>手機號碼</li>
+                        <li>
+                            <input type="phone" class="phone" name="phone">
+                        </li>
+                        <li>收件地址</li>
+                        <li>
+                            <input type="address" class="address" name="address">
+                        </li>
+                        <li>備註</li>
+                        <li>
+                            <textarea placeholder="若有特別需求，請備註在這"></textarea>
+                        </li>
+                    </ul>
+                </div>
+                <div class="payment-method">
+                    <div class="payment-method-title">
+                        付款方式
+                    </div>
+                    <div class="payment-method-content">
+                        <ul class="method-choose">
+                            <li>
+                                <input type="radio" name="method-choose" id="ATM" required>
+                                <label for="ATM">ATM轉帳</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="method-choose" id="credit-card" required>
+                                <label for="credit-card">輸入信用卡卡號付款</label>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>信用卡卡號</li>
+                            <li>
+                                <input type="text" class="credit-card-num" placeholder="0000" maxlength="4">
+                                <input type="text" class="credit-card-num" placeholder="0000" maxlength="4">
+                                <input type="text" class="credit-card-num" placeholder="0000" maxlength="4">
+                                <input type="text" class="credit-card-num" placeholder="0000" maxlength="4">
+                            </li>
+                        </ul>
+                        <div class="flex-verify">
+                            <div class="verify">
+                                <p>有效日期</p>
+                                <input type="text" placeholder="MM/YY" maxlength="4">
+                            </div>
+                            <div class="verify">
+                                <p>驗證碼</p>
+                                <input type="text" placeholder="000" maxlength="3">
+                            </div>
+                        </div>
+                        <a href="order_end.html">
+                            <input type="submit" value="確認付款" class="payment_btn">
+                            <!-- <button>確認付款</button> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- ------------------footer---------------- -->
+        <footer>
+            <div class="footer-contain">
+                <div class="footer-text">
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <span>電話：02-4898937</span>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>地址：新北市新莊區樹新路</span>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <span>客服信箱：remebrance22@gmail.com</span>
+                    </div>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <p class="reference">
+                本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。<br>
+                參考資源：https://ringram.jp/course/engraving/
+            </p>
+        </footer>
+
+
+
+        <script src="./js/cart.js"></script>
+        <!-- <script src="./js/num_jia_jian_js.js"></script> -->
+
+        <script>
+            // 針對信用卡卡號介面調整
+            document.addEventListener("DOMContentLoaded", function () {
+                let cards = document.getElementsByClassName("credit-card-num");
+                // console.log(cards);
+                for (i = 0; i < cards.length; i++) {
+
+                    // ----- 跨欄位刪除 & 只能輸入數字及刪除鍵 ---------//
+                    cards[i].addEventListener("keydown", function (e) {
+                        // console.log(e.which);  //e.which轉換成代碼
+
+                        // 除了數字0-9及刪除鍵外，不得輸入其他字
+                        if ((e.which >= 48 && e.which <= 57) || (e.which == 8) || (e.which >= 96 && e.which <= 105)) {
+
+                            // 刪除鍵可以跨欄位刪除
+                            if (e.target.value.length == 0 && e.which == 8) {
+                                let previous_el = this.previousElementSibling;
+                                previous_el.focus();
+                            }
+                        } else {
+                            e.preventDefault();
+                        }
+                    });
+                    // ----- 跨欄位輸入 & 中文字不能輸入 ------------//
+                    cards[i].addEventListener("keyup", function (e) {
+                        // 解決中文字可以輸入的情形
+                        // 使用正規式：所有非數字字元\D，g所有
+                        let str = (e.target.value).replace(/\D/g, "");
+                        // console.log(str);
+                        e.target.value = str; //將中文輸入值用空字串取代
+
+                        // 希望使用者可以一直輸入下去
+                        // console.log(str.length);
+                        if (str.length == 4) {
+                            let next_el = this.nextElementSibling;
+                            if (next_el != null) {
+                                next_el.focus();
+                            }
+                        }
+                    });
+                }
+            });
+        </script>
+</body>
+
+</html>

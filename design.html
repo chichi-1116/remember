@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂製設計 | 留憶金工</title>
+    <link rel="stylesheet" href="./css/design_style.css">
+    <link rel="icon" href="./source/R.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/10f319606c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- -----------left-------------- -->
+    <nav class="main-sel">
+        <div class="main-sel-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./source/logo2.png" alt="" class="pc-logo">
+                    <img src="./source/logo1.png" alt="" class="sp-logo">
+                </a>
+            </div>
+            <!-- 漢堡checkbox -->
+            <input type="checkbox" id="meun_control">
+            <!-- 漢堡 -->
+            <div class="hamburger">
+                <label for="meun_control" class="meun_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <!-- 漢堡出現介面 = 主選單內容 -->
+
+            <div class="main-sel-transparent">
+
+                <ul class="main-list">
+                    <li><a href="about.html" class="nav-about">關於我們</a></li>
+                    <li><a href="product.html" class="nav-product">所有商品</a></li>
+                    <li><a href="course.html" class="nav-course">金工課程</a></li>
+                    <li><a href="course.html#reserve" class="nav-reserve">線上預約</a></li>
+                    <li><a href="design.html" class="nav-design">訂製設計</a></li>
+                    <li class="search">
+                        <input type="text" placeholder="search...">
+                    </li>
+                </ul>
+
+                <ul class="main-icon">
+                    <li>
+                        <a href="member.html">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- ---------------left end---------------- -->
+
+
+    <!-- -----------------right--------------------- -->
+    <div class="right">
+        <!-- -------------內容------------- -->
+        <div class="container">
+            <!-- <div class="top">
+                <h1>
+                    <span class="design-title">訂製設計</span>
+                    <span>
+                        <span>custom</span>
+                    </span>
+                </h1>
+            </div> -->
+            <!------------ banner ------------>
+            <div class="banner align-bottom slide-in slide-in-rwd">
+                <div class="flex-design">
+                    <div class="design-img">
+                        <img src="./source/product/pendant/square.jpg" alt="">
+                    </div>
+                    <div class="design-text">
+                        <div class="top">
+                            <h1>
+                                <span class="design-title">訂製設計</span>
+                                <span>
+                                    <span>custom</span>
+                                </span>
+                            </h1>
+                        </div>
+                        <p>The most beautiful things in life.
+                            <br><br>
+                            一份獨一無二的禮物，給正在尋找不同於一般戒指的你(們) 。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- -------------- 服務項目 --------------- -->
+            <div class="design-service">
+                <h2 class="align-top slide-in">服務項目</h2>
+                <div class="design-service-list">
+                    <div class="item text zoom-in slide-in">
+                        <img src="./source/client4.jpg" alt="">
+                        <p>刻字服務</p>
+                    </div>
+                    <div class="item pattern zoom-in slide-in">
+                        <img src="./source/client2.jpg" alt="">
+                        <p>圖樣印製</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------------- 訂製流程 ----------------- -->
+            <div class="process">
+                <h2 class="align-top slide-in">訂製流程</h2>
+                <ul class="process-list">
+                    <li class="process-item align-right slide-in">
+                        <div class="process-item1-bg"></div>
+                        <p>填寫訂製需求</p>
+                    </li>
+                    <li class="process-item align-right slide-in">
+                        <div class="process-item2-bg"></div>
+                        <p>信件確認設計圖</p>
+                    </li>
+                    <li class="process-item align-right slide-in">
+                        <div class="process-item3-bg"></div>
+                        <p>收取禮物</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- ---------------- 表單 ---------------- -->
+            <div class="demand">
+                <h2 class="align-top slide-in">寫下禮物需求</h2>
+                <form class="demand-form align-bottom slide-in">
+                    <div class="demand-table">
+                        <ul>
+                            <!-- 1 商品種類 -->
+                            <li>商品種類</li>
+                            <li>
+                                <select>
+                                    <option>戒指</option>
+                                    <option>手環</option>
+                                    <option>墜飾</option>
+                                </select>
+                            </li>
+                            <!-- 2 尺寸 -->
+                            <li>尺寸</li>
+                            <li>
+                                <select>
+                                    <option>#5</option>
+                                    <option>#6</option>
+                                    <option>#7</option>
+                                    <option>#8</option>
+                                    <option>#9</option>
+                                    <option>#10</option>
+                                    <option>#11</option>
+                                    <option>#12</option>
+                                    <option>#13</option>
+                                    <option>#14</option>
+                                    <option>#15</option>
+                                    <option>#16</option>
+                                    <option>#17</option>
+                                    <option>#18</option>
+                                </select>
+                            </li>
+                            <!-- 3 服務項目 -->
+                            <li>服務項目</li>
+                            <li>
+                                <select>
+                                    <option>刻字服務</option>
+                                    <option>圖樣印製</option>
+                                </select>
+                            </li>
+                            <!-- 4 指定樣式說明 -->
+                            <li>指定樣式說明</li>
+                            <li>
+                                <textarea placeholder="請盡量詳細的描述圖樣、位置等，若有指定的商品樣式，請一併寫下。"></textarea>
+                            </li>
+                        </ul>
+                        <ul>
+                            <!-- 5 姓名 -->
+                            <li>姓名</li>
+                            <li>
+                                <input type="name" id="name" class="user-name" name="name">
+                            </li>
+                            <!-- 6 電話 -->
+                            <li>聯絡電話</li>
+                            <li>
+                                <input type="phone" id="phone" class="user-phone" name="phone">
+                            </li>
+                            <!-- 7 信箱 -->
+                            <li>電子信箱</li>
+                            <li>
+                                <input type="useremail" id="useremail" class="user-email" name="useremail">
+                            </li>
+                            <!-- 8 提交 -->
+                            <li>
+                                ※ ️我們會在確認定案設計圖後，才與您收取費用。<br><br>※ ️客製化商品，因依照個人專屬需求製作，經最終確認開始製作後，恕不接受修改訂單與取消訂單。
+                                <button class="demand_btn">提交</button>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+
+        <!-- ------------------footer---------------- -->
+        <footer>
+            <div class="footer-contain">
+                <div class="footer-text">
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <span>電話：02-4898937</span>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>地址：新北市新莊區樹新路</span>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <span>客服信箱：remebrance22@gmail.com</span>
+                    </div>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <p class="reference">
+                本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。<br>
+                參考資源：https://ringram.jp/course/engraving/
+            </p>
+        </footer>
+
+        <div class="js-back-to-top">
+            <img src="./source/top.png" alt="">
+        </div>
+
+    </div>
+    <script src="./js/all.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</body>
+
+</html>

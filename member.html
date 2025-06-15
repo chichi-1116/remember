@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員登入 | 留憶金工</title>
+
+    <link rel="stylesheet" href="./css/member_style.css">
+    <link rel="icon" href="./source/R.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/10f319606c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- -----------left-------------- -->
+    <nav class="main-sel">
+        <div class="main-sel-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./source/logo2.png" alt="" class="pc-logo">
+                    <img src="./source/logo1.png" alt="" class="sp-logo">
+                </a>
+            </div>
+            <!-- 漢堡checkbox -->
+            <input type="checkbox" id="meun_control">
+            <!-- 漢堡 -->
+            <div class="hamburger">
+                <label for="meun_control" class="meun_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <!-- 漢堡出現介面 = 主選單內容 -->
+
+            <div class="main-sel-transparent">
+
+                <ul class="main-list">
+                    <li><a href="about.html" class="nav-about">關於我們</a></li>
+                    <li><a href="product.html" class="nav-product">所有商品</a></li>
+                    <li><a href="course.html" class="nav-course">金工課程</a></li>
+                    <li><a href="course.html#reserve" class="nav-reserve">線上預約</a></li>
+                    <li><a href="design.html" class="nav-design">訂製設計</a></li>
+                    <li class="search">
+                        <input type="text" placeholder="search...">
+                    </li>
+                </ul>
+
+                <ul class="main-icon">
+                    <li>
+                        <a href="member.html">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- ---------------left end---------------- -->
+    <div class="right">
+        <!---------------- top ----------------->
+        <div class="top">
+            <h1>
+                <span class="h1">會員登入</span>
+                <span>
+                    <span>Sign in</span>
+                </span>
+            </h1>
+        </div>
+
+
+        <!-- -----------------container------------------- -->
+        <div class="container">
+            <!--login會員登入-->
+            <form class="pc-form">
+                <table class="member-login">
+                    <tbody>
+                        <!-- 1 帳號 -->
+                        <tr class="input">
+                            <td>電子信箱</td>
+                            <td>
+                                <input type="username" id="username" class="username_email" name="username"
+                                    placeholder="您的電子郵件地址" required>
+                            </td>
+                        </tr>
+
+                        <!-- 2 密碼 -->
+                        <tr class="input">
+                            <td>密碼</td>
+                            <td>
+                                <input type="password" id="password" class="password1" name="password"
+                                    placeholder="您的密碼" required>
+                            </td>
+                        </tr>
+
+                        <!-- 3 登入 -->
+                        <tr class="mem_btn">
+                            <td></td>
+                            <td>
+                                <!-- <input type="button" value="登入" class="btn" id="submit" onclick="myFormCheck()" /> -->
+                                <a href="member_center.html" class="btn">登入
+                                </a>
+                                
+                            </td>
+                        </tr>
+                        <!-- 4 記住我 -->
+                        <tr>
+                            <td></td>
+                            <td id="rmbr">
+                                <input type="checkbox" id="remberme" name="remberme" required>
+                                <label for="remberme" id="remberme0">記住我</label>
+                            </td>
+                        </tr>
+                        <!-- 5 忘記密碼 -->
+                        <tr>
+                            <td></td>
+                            <td id="sign">
+                                <a href="#" id="member_btn">忘記密碼？</a>
+                                |
+                                <a href="register.html" id="register">註冊</a>
+                            </td>
+                        </tr>
+                        <!-- 6 其他登入方式 -->
+                        <tr>
+                            <td></td>
+                            <td class="member_btn">用以下帳號密碼登入為會員</td>
+                        </tr>
+                        <!-- 7 icon -->
+                        <tr class="other-signin">
+                            <td></td>
+                            <td class="other-sign">
+                                <a href="https://www.google.com/">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="https://www.facebook.com/">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                                <a href="https://line.me/zh-hant/">
+                                    <i class="fab fa-line"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </form>
+            <form action="" class="sp-form">
+                <ul>
+                    <!-- 1 帳號 -->
+                        <li>電子信箱</li>
+                        <li>
+                            <input type="username" id="username" class="username_email" name="username"
+                                placeholder="您的電子郵件地址" required>
+                        </li>
+
+                    <!-- 2 密碼 -->
+                        <li>密碼</li>
+                        <li>
+                            <input type="password" id="password" class="password1" name="password"
+                                placeholder="您的密碼" required>
+                        </li>
+
+                    <!-- 3 登入 -->
+                        <li class="mem_btn">
+                            <!-- <input type="button" value="登入" class="btn" id="submit" onclick="myFormCheck()" /> -->
+                            <a href="member_center.html" class="btn">登入
+                            </a>
+                        </li>
+                    <!-- 4 記住我 -->
+                        <li id="rmbr1">
+                            <input type="checkbox" id="remberme1" name="remberme" required>
+                            <label for="remberme1" id="remberme0">記住我</label>
+                        </li>
+                    <!-- 5 忘記密碼 -->
+                        <li id="sign">
+                            <a href="#" id="member_btn">忘記密碼？</a>
+                            |
+                            <a href="register.html" id="register">註冊</a>
+                        </li>
+                    <!-- 6 其他登入方式 -->
+                        <li class="member_btn">用以下帳號密碼登入為會員</li>
+                    <!-- 7 icon -->
+                        <li class="other-signin">
+                            <a href="https://www.google.com/">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="https://www.facebook.com/">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a href="https://line.me/zh-hant/">
+                                <i class="fab fa-line"></i>
+                            </a>
+                        </li>
+                    </ul>
+            </form>
+        </div>
+        <!-- ------------------footer---------------- -->
+        <footer>
+            <div class="footer-contain">
+                <div class="footer-text">
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <span>電話：02-4898937</span>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>地址：新北市新莊區樹新路</span>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <span>客服信箱：remebrance22@gmail.com</span>
+                    </div>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <p class="reference">
+                本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。<br>
+                參考資源：https://ringram.jp/course/engraving/
+            </p>
+        </footer>
+    </div>
+
+
+
+
+</body>
+
+</html>

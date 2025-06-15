@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員註冊 | 留憶金工</title>
+
+    <link rel="stylesheet" href="./css/register_style.css">
+    <link rel="icon" href="./source/R.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/10f319606c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- -----------left-------------- -->
+    <nav class="main-sel">
+        <div class="main-sel-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./source/logo2.png" alt="" class="pc-logo">
+                    <img src="./source/logo1.png" alt="" class="sp-logo">
+                </a>
+            </div>
+            <!-- 漢堡checkbox -->
+            <input type="checkbox" id="meun_control">
+            <!-- 漢堡 -->
+            <div class="hamburger">
+                <label for="meun_control" class="meun_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <!-- 漢堡出現介面 = 主選單內容 -->
+
+            <div class="main-sel-transparent">
+
+                <ul class="main-list">
+                    <li><a href="about.html" class="nav-about">關於我們</a></li>
+                    <li><a href="product.html" class="nav-product">所有商品</a></li>
+                    <li><a href="course.html" class="nav-course">金工課程</a></li>
+                    <li><a href="course.html#reserve" class="nav-reserve">線上預約</a></li>
+                    <li><a href="design.html" class="nav-design">訂製設計</a></li>
+                    <li class="search">
+                        <input type="text" placeholder="search...">
+                    </li>
+                </ul>
+
+                <ul class="main-icon">
+                    <li>
+                        <a href="member.html">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- ---------------left end---------------- -->
+    <div class="right">
+        <!---------------- top ----------------->
+        <div class="top">
+            <h1>
+                <span class="h1">註冊</span>
+                <span>
+                    <span>Sign up</span>
+                </span>
+            </h1>
+        </div>
+
+
+        <!-- -----------------container------------------- -->
+        <div class="container">
+            <!--註冊-->
+            <form class="pc-form">
+                <table class="register">
+                    <!-- 1 帳號 -->
+                    <tr class="input">
+                        <td>電子信箱</td>
+                        <td>
+                            <input type="username" class="username_email" name="username"
+                                placeholder="您的電子郵件地址" required>
+                        </td>
+                    </tr>
+
+                    <!-- 2 密碼 -->
+                    <tr class="input">
+                        <td>密碼</td>
+                        <td>
+                            <input type="password" class="password1" name="password" placeholder="您的密碼" required>
+                        </td>
+                    </tr>
+                    <!-- 3 確認密碼 -->
+                    <tr class="input">
+                        <td>確認密碼</td>
+                        <td>
+                            <input type="password" class="password1" name="password" placeholder="請再一次輸入您的密碼" required>
+                        </td>
+                    </tr>
+
+                    <!-- 4 姓名 -->
+                    <tr class="input">
+                        <td>姓名</td>
+                        <td>
+                            <input type="name" class="name" name="name" placeholder="請輸入全名" required>
+                        </td>
+                    </tr>
+                    <!-- 5 性別 -->
+                    <tr>
+                        <td>性別</td>
+                        <td>
+                            <input type="radio" name="sex" id="male" required>
+                            <label for="male">男</label>
+                            <input type="radio" name="sex" id="female" required>
+                            <label for="female">女</label>
+                            <input type="radio" name="sex" id="none" required>
+                            <label for="none">不公開</label>
+                        </td>
+                    </tr>
+
+                    <!-- 6 生日 -->
+                    <tr>
+                        <td>生日</td>
+                        <td>
+                            <input type="date" name="bithday" min="1920-01-01" max="today" required>
+                        </td>
+                    </tr>
+
+                    <!-- 7 電話 -->
+                    <tr class="input">
+                        <td>電話</td>
+                        <td>
+                            <input type="phone" class="phone" name="phone" required>
+                        </td>
+                    </tr>
+                    <!-- 8 地址 -->
+                    <tr class="input">
+                        <td>地址</td>
+                        <td>
+                            <input type="address" class="address" name="address" required>
+                        </td>
+                    </tr>
+                    <!-- 9 同意 -->
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" name="agree" id="agree" required>
+                            <label for="agree">我已閱讀並同意
+                                <a href="#">《隱私權保護政策》</a>及<a href="#">《定型化契約條款》</a>。</label>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="註冊" class="btn">
+                <!-- <a href="member.html" class="btn">註冊</a> -->
+            </form>
+
+            <form action="" class="sp-form">
+                <ul class="register">
+                    <!-- 1 帳號 -->
+                    <li>電子信箱</li>
+                    <li class="input">
+                        <input type="username" class="username_email" name="username"
+                            placeholder="您的電子郵件地址" required>
+                    </li>
+
+                    <!-- 2 密碼 -->
+                    <li>密碼</li>
+                    <li class="input">
+                        <input type="password" class="password1" name="password" placeholder="您的密碼" required>
+                    </li>
+                    <!-- 3 確認密碼 -->
+                    <li>確認密碼</li>
+                    <li class="input">
+                        <input type="password" class="password1" name="password" placeholder="請再一次輸入您的密碼" required>
+                    </li>
+
+                    <!-- 4 姓名 -->
+                    <li>姓名</li>
+                    <li class="input">
+                        <input type="name" class="name" name="name" placeholder="請輸入全名" required>
+                    </li>
+                    <!-- 5 性別 -->
+                    <li>性別</li>
+                    <li>
+                        <input type="radio" name="sex" id="male1" required>
+                        <label for="male1">男</label>
+                        <input type="radio" name="sex" id="female1" required>
+                        <label for="female1">女</label>
+                        <input type="radio" name="sex" id="none1" required>
+                        <label for="none1">不公開</label>
+                    </li>
+
+                    <!-- 6 生日 -->
+                    <li>生日</li>
+                    <li class="birthday">
+                        <input type="date" name="bithday" min="1920-01-01" max="today" required>
+                    </li>
+
+                    <!-- 7 電話 -->
+                    <li>電話</li>
+                    <li class="input">
+                        <input type="phone" class="phone" name="phone" required>
+                    </li>
+                    <!-- 8 地址 -->
+                    <li>地址</li>
+                    <li class="input">
+                        <input type="address" class="address" name="address" required>
+                    </li>
+                    <!-- 9 同意 -->
+                    <li>
+                        <input type="checkbox" name="agree" id="agree1" required>
+                        <label for="agree">我已閱讀並同意
+                            <a href="#">《隱私權保護政策》</a>及<a href="#">《定型化契約條款》</a>。</label>
+                    </li>
+                    <input type="submit" value="註冊" class="btn">
+                    <!-- <a href="member.html" class="btn">註冊</a> -->
+            </form>
+        </div>
+        <!-- ------------------footer---------------- -->
+        <footer>
+            <div class="footer-contain">
+                <div class="footer-text">
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <span>電話：02-4898937</span>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>地址：新北市新莊區樹新路</span>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <span>客服信箱：remebrance22@gmail.com</span>
+                    </div>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <p class="reference">
+                本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。<br>
+                參考資源：https://ringram.jp/course/engraving/
+            </p>
+        </footer>
+
+
+
+
+</body>
+
+</html>

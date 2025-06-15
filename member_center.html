@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心 | 留憶金工</title>
+
+    <link rel="stylesheet" href="./css/member_center_style.css">
+    <link rel="icon" href="./source/R.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/10f319606c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- -----------left-------------- -->
+    <nav class="main-sel">
+        <div class="main-sel-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./source/logo2.png" alt="" class="pc-logo">
+                    <img src="./source/logo1.png" alt="" class="sp-logo">
+                </a>
+            </div>
+            <!-- 漢堡checkbox -->
+            <input type="checkbox" id="meun_control">
+            <!-- 漢堡 -->
+            <div class="hamburger">
+                <label for="meun_control" class="meun_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <!-- 漢堡出現介面 = 主選單內容 -->
+
+            <div class="main-sel-transparent">
+
+                <ul class="main-list">
+                    <li><a href="about.html" class="nav-about">關於我們</a></li>
+                    <li><a href="product.html" class="nav-product">所有商品</a></li>
+                    <li><a href="course.html" class="nav-course">金工課程</a></li>
+                    <li><a href="course.html#reserve" class="nav-reserve">線上預約</a></li>
+                    <li><a href="design.html" class="nav-design">訂製設計</a></li>
+                    <li class="search">
+                        <input type="text" placeholder="search...">
+                    </li>
+                </ul>
+
+                <ul class="main-icon">
+                    <li>
+                        <a href="member.html">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- ---------------left end---------------- -->
+
+    <div class="right">
+        <!---------------- top ----------------->
+        <div class="top">
+            <h1>
+                <span class="h1">會員中心</span>
+                <span>
+                    <span>Member</span>
+                </span>
+            </h1>
+        </div>
+
+
+        <!-- -----------------container----------------- -->
+        <div class="container">
+            <!-- ----------- 會員資料 ---------- -->
+
+            <!-- 修改密碼 -->
+            <div class="personal-revise">
+                <div class="personal-title">
+                    <h2>| 會員資料 |</h2>
+                </div>
+                <div class="flex-personal-revise">
+                    <div class="revise">
+                        <p>修改密碼</p>
+                        <!-- <hr> -->
+                        <ul>
+                            <li>電子信箱</li>
+                            <li>
+                                <input type="useremail" name="useremail" placeholder="您的電子信箱...">
+                            </li>
+                            <li>舊密碼</li>
+                            <li>
+                                <input type="oldpassword" name="oldpassword" placeholder="您的舊密碼...">
+                            </li>
+                            <li>新密碼</li>
+                            <li>
+                                <input type="newpassword" name="newpassword" placeholder="您的新密碼...">
+                            </li>
+                            <li>新密碼確認</li>
+                            <li>
+                                <input type="checkpassword" name="checkpassword" placeholder="請再次輸入您的新密碼...">
+                            </li>
+                            <li>
+                                <!-- <input type="submit" value="提交" class="revise_btn"> -->
+                                <button type="submit" class="revise_btn">提交</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 修改個資 -->
+                    <div class="revise">
+                        <p>修改會員資料</p>
+                        <!-- <hr> -->
+                        <ul>
+                            <li>姓名</li>
+                            <li>
+                                <input type="name" name="name" placeholder="您的姓名...">
+                            </li>
+                            <li>電話</li>
+                            <li>
+                                <input type="phone" name="phone" placeholder="您的電話...">
+                            </li>
+                            <li>電子信箱</li>
+                            <li>
+                                <input type="useremail" name="useremail" placeholder="您的電子信箱...">
+                            </li>
+                            <li>地址</li>
+                            <li>
+                                <input type="address" name="address" placeholder="您的地址...">
+                            </li>
+                            <li>
+                                <!-- <input type="submit" value="提交" class="revise_btn"> -->
+                                <button type="submit" class="revise_btn">提交</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 訂單資訊 -->
+            <div class="order-info">
+                <h2>| 訂單資訊 |</h2>
+                <div class="pc-order">
+                    <ul>
+                        <li>訂單日期</li>
+                        <li>訂單編號</li>
+                        <li>訂單狀態</li>
+                        <li>總金額</li>
+                    </ul>
+
+                    <ul>
+                        <ol>
+                            <li>2022/01/24</li>
+                            <li>#24843212</li>
+                            <li>已出貨</li>
+                            <li>NT$2160</li>
+                            <li>
+                                <button>訂單明細</button>
+                            </li>
+                        </ol>
+                        <ol>
+                            <li>2021/12/01</li>
+                            <li>#24841982</li>
+                            <li>已完成</li>
+                            <li>NT$1480</li>
+                            <li>
+                                <button>訂單明細</button>
+                            </li>
+                        </ol>
+                        <ol>
+                            <li>2021/01/01</li>
+                            <li>#24843212</li>
+                            <li>已完成</li>
+                            <li>NT$1280</li>
+                            <li>
+                                <button>訂單明細</button>
+                            </li>
+                        </ol>
+                    </ul>
+                </div>
+
+                <!-- ---------------------------------- -->
+                <div class="sp-order">
+                    <ul>
+                        <li class="bold">訂單日期</li>
+                        <li>2022/01/24</li>
+                        <li class="bold">訂單編號</li>
+                        <li>#24843212</li>
+                        <li class="bold">訂單狀態</li>
+                        <li>已出貨</li>
+                        <li class="bold">總金額</li>
+                        <li>NT$2160</li>
+                        <li>
+                            <button>訂單明細</button>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li class="bold">訂單日期</li>
+                        <li>2021/12/01</li>
+                        <li class="bold">訂單編號</li>
+                        <li>#24841982</li>
+                        <li class="bold">訂單狀態</li>
+                        <li>已完成</li>
+                        <li class="bold">總金額</li>
+                        <li>NT$1480</li>
+                        <li>
+                            <button>訂單明細</button>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li class="bold">訂單日期</li>
+                        <li>2021/01/01</li>
+                        <li class="bold">訂單編號</li>
+                        <li>#24843212</li>
+                        <li class="bold">訂單狀態</li>
+                        <li>已完成</li>
+                        <li class="bold">總金額</li>
+                        <li>NT$1280</li>
+                        <li>
+                            <button>訂單明細</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- ------------------footer---------------- -->
+        <footer>
+            <div class="footer-contain">
+                <div class="footer-text">
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <span>電話：02-4898937</span>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>地址：新北市新莊區樹新路</span>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <span>客服信箱：remebrance22@gmail.com</span>
+                    </div>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <p class="reference">
+                本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。<br>
+                參考資源：https://ringram.jp/course/engraving/
+            </p>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- 回到頂端按鈕 start -->
+        <script>
+            //<![CDATA[
+            (function () {
+                $("body").append("<img id='goTopButton' style='display: none; width:50px; z-index: 5; cursor: pointer;'/>");
+                var img = "./source/top.png",
+                    locatioin = 4 / 5, // 按鈕出現在螢幕的高度
+                    right = 10, // 距離右邊 px 值
+                    opacity = 0.5, // 透明度
+                    speed = 500, // 捲動速度
+                    $button = $("#goTopButton"),
+                    $body = $(document),
+                    $win = $(window);
+                $button.attr("src", img);
+                $button.on({
+                    mouseover: function () { $button.css("opacity", 1); },
+                    mouseout: function () { $button.css("opacity", opacity); },
+                    click: function () { $("html, body").animate({ scrollTop: 0 }, speed); }
+                });
+                window.goTopMove = function () {
+                    var css = { "top": $win.height() * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity };
+                    if ($body.scrollTop() > 300) {
+                        $button.css(css);
+                        $button.fadeIn("slow");
+                    } else {
+                        $button.fadeOut("slow");
+                    }
+                };
+                $win.on({
+                    scroll: function () { goTopMove(); },
+                    resize: function () { goTopMove(); }
+                });
+            })();
+        //]]>
+        </script>
+        <!-- 回到頂端按鈕 end, Design by WFU BLOG -->
+</body>
+
+</html>
