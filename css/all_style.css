@@ -1,8 +1,15 @@
 @import url('reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap');
 
+@font-face {
+  font-family: 'AngellaWhite';
+  src: url('./AngellaWhite.woff2') format('woff2'),
+       url('./AngellaWhite.woff') format('woff'),
+       url('./AngellaWhite.otf') format('opentype');
+}
+
 body {
-    font-family: 'Noto Serif TC', serif, Arial, "微軟正黑體";
+    font-family: 'AngellaWhite','Noto Serif TC', serif, Arial, "微軟正黑體";
     /* font-family: 'Noto Sans TC',Arial,"微軟正黑體"; */
     font-size: 16px;
     line-height: 1.5;
@@ -49,7 +56,7 @@ body h2 {
 
 
 /* -------共用主選單-------- */
-.main-sel {
+/* .main-sel {
     font-size: 20px;
     width: 15%;
     height: 100vh;
@@ -61,12 +68,12 @@ body h2 {
     position: fixed;
     left: 0;
     top: 0;
-    /* z-index: 1; */
-}
+} */
 
-.main-sel-inner {
+/* .main-sel-inner {
     max-height: 100%;
-}
+} */
+
 /* ---logo----- */
 
 .logo {
@@ -97,10 +104,70 @@ body h2 {
 
 /* -----選單選項---- */
 
+.main-list {
+    width: 100%;
+    height: 360px;
+    text-align: center;
+    position: relative;
+    margin: auto 0;
+    /* padding-top: 20px; */
+    /* border: black solid 1px;  */
+}
+
+.main-list li {
+    /* margin: 10px 0; */
+    line-height: 60px;
+}
+
+.main-list a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    width: 80%;
+}
+
+.main-list a:hover {
+    /* background-color: rgba(190, 190, 127, 1); */
+    background-color: rgb(153, 153, 139);
+    color: white;
+    font-weight: bold;
+}
+
+.search input {
+    width: 50%;
+    background: none;
+    border: 0 none;
+    border-bottom: black solid 1px;
+    padding: 10px;
+}
+
+/* 漢堡checkbox */
+#meun_control{
+    display: none;
+}
+
 
 /* ---------功能icon---------- */
 
+.main-icon {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+}
 
+.main-icon li {
+    margin: 10px;
+}
+
+.main-icon i {
+    color: #333;
+    font-size: 20px;
+}
+
+.main-icon i:hover {
+    color: rgb(178, 144, 193);
+}
 
 /* ======================== footer ===================== */
 
@@ -205,27 +272,24 @@ footer hr {
 /* ========= 大於769px ============ */
 @media (min-width:769px) {
     .right {
-        width: 100%;
+        /* width: 85%;
         margin-right: 0;
-        margin-left: auto;
+        margin-left: auto; */
         overflow: hidden;
     }
-    .top {
+    /* .top {
         width: 70%;
     }
     .top h1 span:nth-child(2) span {
         padding-left: 50px;
-    }
+    } */
 }
 
 /* ============ 共用top ============ */
 .top {
-    /* width:700px; */
-    /* height: 60px; */
     height: 100px;
     margin: 0 auto;
     position: relative;
-    /* border-bottom: 60px solid rgba(225, 225, 197, .4); */
     border-bottom: 80px solid rgba(225, 225, 197, .4);
 }
 
@@ -257,7 +321,7 @@ footer hr {
 /* ===================== container =================== */
 
 .container {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     padding-bottom: 130px;
     /* position: relative; */
@@ -306,7 +370,7 @@ button:hover {
         overflow: hidden;
     }
     /* ------ nav 最上方 ---------- */
-    .main-sel {
+    /* .main-sel {
         width: 100%;
         height: 60px;
         font-size: 20px;
@@ -317,23 +381,20 @@ button:hover {
         top: 0;
         left: 0;
         z-index: 5;
-    }
+    } */
 
     /* -------- nav 出現介面 ------------ */
-    .main-sel-transparent {
+    /* .main-sel-transparent {
         width: 100%;
         height: 100vh;
-        /* padding-top: 10px; */
         background-image: url('../source/nav_bg.jpg');
         background-size: cover;
         position: absolute;
-        /* top: 60px;
-        left: -100%; */
         top: 60px;
         left: -100vw;
         opacity: 0;
         transition: 1s;
-    }
+    } */
 
     /* ---logo----- */
     .logo {
@@ -354,7 +415,7 @@ button:hover {
         display: none;
     }
     /* ------ 漢堡 ----- */
-    .hamburger {
+    /* .hamburger {
         width: 25px;
         height: 50px;
         margin: 0;
@@ -383,10 +444,10 @@ button:hover {
     }
     .hamburger span:nth-child(3) {
         width: 18px;
-    }
+    } */
 
     /* ------- 當點擊checkbox後 ------- */
-    #meun_control:checked + div + div{
+    /* #meun_control:checked + div + div{
         left: 0;
         top: 60px;
         opacity: .9;
@@ -399,7 +460,7 @@ button:hover {
     }
     #meun_control:checked + div > label > span:nth-child(3){
         transform: scale(0);
-    }
+    } */
 }
 
 /* 有些瀏覽器會預設背景色 */
@@ -661,7 +722,275 @@ select{
   }
 
 
-  /* ------------------- 服務項目 ------------------ */
+
+/* -------------------top--------------------- */
+
+/* =================== 小於575.98 ====================== */
+@media (max-width:575.98px) {
+
+    /* ----------- top ----------- */
+    .top span:nth-child(2)::before{
+        position: absolute;
+        /* top: 80px;
+        left: 100px; */
+        top: 100px;
+        left: 120px;
+    }
+
+    /* ----------- story & addr ----------- */
+    .story,.addr{
+        padding-top: 70px;
+    }
+    .flex-story,.flex-addr{
+        display: block;
+    }
+    .story-img-small {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .story-img,.addr-img{
+        width: 100%;
+    }
+    .story-text,.addr-text{
+        width: 100%;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+    }
+    .story img,.addr-img img{
+        max-width: 100%;
+    }
+    .addr-text{
+        padding-top: 20px;
+    }
+    .addr-text li{
+        padding-bottom: 10px;
+    }
+}
+
+
+/* ==================== 576 ~ 768.98 ================= */
+@media (min-width:576px) and (max-width:768.98px) {
+    /* ----------- top ----------- */
+    .top span:nth-child(2)::before{
+        position: absolute;
+        top: 100px;
+        left: 45%;
+    }
+
+
+    /* ----------- story ----------- */
+    .story,.addr{
+        width: 100%;
+        padding-top: 70px;
+        /* border: solid black 1px; */
+    }
+    
+    .flex-story,.flex-addr{
+        max-width: 100%;
+        display: flex;
+        /* border: solid red 1px; */
+        justify-content: space-between;   
+        align-items: center;
+    }
+
+    .story-text ,.addr-text{
+        width: 50%;
+        padding-left: 50px;
+        padding-right: 30px;
+        letter-spacing:3px;
+    }
+
+    .story-img-small{
+        width: 80%;
+        display: block;
+    }
+
+    .story-img-large{
+        width: 100%;
+        display: block;
+    }
+
+    .story-img{
+        width: 100%;
+    }
+    
+    .mr-1{
+        margin-right: 30px
+    }
+
+    .ml-1{
+        margin-left: 30px
+    }
+    
+    .story img, .addr-img img{
+        max-width: 100%;
+        display: block;
+    }
+}
+
+/* ======================= 大於769 ====================== */
+@media (min-width:769px) {
+    /* ----------- top ----------- */
+    .top span:nth-child(2)::before{
+        position: absolute;
+        top: 100px;
+        left: 47%;
+    }
+
+
+    /* ----------- story ----------- */
+    .story,.addr{
+        width: 100%;
+        padding-top: 70px;
+        /* border: solid black 1px; */
+    }
+    
+    .flex-story,.flex-addr{
+        max-width: 100%;
+        display: flex;
+        /* border: solid red 1px; */
+        justify-content: space-between;   
+        align-items: center;
+    }
+    
+    
+    .story-text ,.addr-text{
+        width: 50%;
+        padding-left: 50px;
+        padding-right: 30px;
+        letter-spacing:3px;
+    }
+    
+    .story-img-small{
+        width: 80%;
+        display: block;
+    }
+
+    .story-img-large{
+        width: 100%;
+        display: block;
+    }
+
+    .story-img{
+        width: 100%;
+    }
+    
+    .mr-1{
+        margin-right: 30px
+    }
+    
+    .ml-1{
+        margin-left: 30px
+    }
+    
+    .story img, .addr-img img{
+        max-width: 100%;
+        display: block;
+    }
+}
+
+
+/* ------------------ 營業資訊addr --------------------- */
+
+.addr-text ul:first-child{
+    /* border: solid red 1px; */
+    margin-bottom: 30px;
+}
+
+
+.addr-map{
+    /* border: solid red 1px; */
+    font-size: 0;
+    margin-top: 30px;
+}
+
+
+.flex-design{
+    /* border: blue solid 1px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.design-img{
+    width: 40%;
+    height: auto;
+}
+
+.design-img img{
+    max-width: 100%;
+    display: block;
+}
+
+.design-title{
+    /* padding-bottom: 30px; */
+}
+
+.design-text{
+    min-width: 60%;
+    height: auto;
+    /* border: black solid 1px; */
+    padding-left: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    z-index: 1;
+    /* position: relative; */
+}
+.top{
+    width: 90%;
+}
+
+.top span:nth-child(2)::before{
+	position: absolute;
+	bottom: 0;
+	left: 43%;
+}
+
+.design-text p{
+    padding-top: 30px;
+    padding-bottom: 150px;
+}
+
+
+@media (max-width:768.98px) {
+    .flex-design{
+        flex-direction: column;
+    }
+    .design-text{
+        width: 100%;
+        padding: 10px;
+        order: 1;
+        margin-bottom: 20px;
+    }
+    .design-text p{
+        padding-bottom: 0;
+    }
+    .design-img{
+        width: 60%;
+        order: 2;
+    }
+}
+@media (max-width:575.98px) {
+
+    .design-img{
+        width: 80%;
+    }
+    .top span:nth-child(2)::before{
+        bottom: 0;
+        left: 110px;
+    }
+    .top{
+        width: 100%;
+        max-width:310px;
+    }
+    .design-text{
+        width: 100vw;
+    }
+}
+
+
+/* ------------------- 服務項目 ------------------ */
 .design-service{
     width: 100%;
     /* border: royalblue solid 1px; */
@@ -679,7 +1008,7 @@ select{
 }
 
 .design-service-list .item{
-    width: 40%;
+    width: 100%;
     min-height: 100%;
     /* border: solid black 1px; */
 }
@@ -698,104 +1027,150 @@ select{
     }
 }
 
+.item p{
+    padding-top: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
 
-/* =================== 小於575.98 ====================== */
+/* ----------------- 訂製流程 ------------------ */
+
+.process{
+    /* border: royalblue solid 1px; */
+    padding: 90px 0 130px;
+    text-align: center;
+}
+
+.process-list{
+    /* width: 100%; */
+    /* border: red solid 1px; */
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.process-item{
+    width: 150px;
+    height: 150px;
+    /* border: solid black 1px; */
+}
+
+.process-list li:nth-child(n+2){
+    padding-left: 100px;
+}
+
 @media (max-width:575.98px) {
-    /* ----------- story & addr ----------- */
-    .story,.addr{
-        padding-top: 70px;
+    .process-list{
+        display: inline-block;
     }
-    .flex-story,.flex-addr{
-        display: block;
+    ul.process-list li:nth-child(n+2){
+        padding-left: 0;
     }
-    .story-img,.addr-img{
-        width: 100%;
-    }
-    .story-text,.addr-text{
-        width: 100%;
-        padding-bottom: 20px;
-        letter-spacing: 2px;
-    }
-    .story-img img,.addr-img img{
-        max-width: 100%;
-    }
-    .addr-text{
-        padding-top: 20px;
-    }
-    .addr-text li{
-        padding-bottom: 10px;
+    ul.process-list li{
+        margin-bottom: 80px;
     }
 }
 
-
-/* ==================== 576 ~ 768.98 ================= */
-@media (min-width:576px) and (max-width:768.98px) {
-    /* ----------- story ----------- */
-    .story,.addr{
-        width: 100%;
-        padding-top: 70px;
-        /* border: solid black 1px; */
-    }
-    
-    .flex-story,.flex-addr{
-        max-width: 100%;
-        display: flex;
-        /* border: solid red 1px; */
-        justify-content: center;   
-        align-items: center;
-    }
-    
-    
-    .story-text ,.addr-text{
-        width: 50%;
-        padding-left: 50px;
-        padding-right: 30px;
-        letter-spacing:3px;
-    }
-    
-    .story-img, .addr-img{
-        width: 50%;
-        display: block;
-    }
-    
-    .story-img img, .addr-img img{
-        max-width: 100%;
-        display: block;
-    }
+.process-item1-bg{
+    width: 100%;
+    height: 100%;
+    background-image: url('../source/write_1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-/* ======================= 大於769 ====================== */
-@media (min-width:769px) {
-    /* ----------- story ----------- */
-    .story,.addr{
+.process-item2-bg{
+    width: 100%;
+    height: 100%;
+    background-image: url('../source/mail.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.process-item3-bg{
+    width: 100%;
+    height: 100%;
+    background-image: url('../source/gift_1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.process-item p{
+    padding-top: 10px;
+    /* color: rgba(209, 194, 55, 1); */
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+
+
+/* ----------------- 表單 ------------------ */
+.demand-form{
+    border: black solid 1px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.demand-table{
+    width: 100%;
+    /* border: red solid 1px; */
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    padding-bottom: 30px;
+}
+.demand-table ul{
+    width: 50%;
+}
+
+.demand-table li{
+    width: 100%;
+}
+.demand-table li:nth-child(7){
+    padding-bottom: 10px;
+}
+.demand-table li:nth-child(even){
+    padding-bottom: 20px;
+}
+
+.demand input{
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid #333;
+}
+
+
+.demand select{
+    width: 100px;
+    height: 40px;
+    border: 0;
+    border-bottom: 1px solid #333;
+}
+
+.demand textarea{
+    width: 80%;
+    height: 100px;
+    resize: none;
+    display: block;
+    padding: 10px;
+}
+
+
+
+/*  提交按鈕   */
+.demand_btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width:575.98px) {
+    .demand-table{
+        display: inline-block;
+        padding-bottom: 60px;
+    }
+    .demand-table ul{
         width: 100%;
-        padding-top: 70px;
-        /* border: solid black 1px; */
-    }
-    
-    .flex-story,.flex-addr{
-        max-width: 100%;
-        display: flex;
-        /* border: solid red 1px; */
-        justify-content: center;   
-        align-items: center;
-    }
-    
-    
-    .story-text ,.addr-text{
-        width: 50%;
-        padding-left: 50px;
-        padding-right: 30px;
-        letter-spacing:3px;
-    }
-    
-    .story-img, .addr-img{
-        width: 50%;
-        display: block;
-    }
-    
-    .story-img img, .addr-img img{
-        max-width: 100%;
-        display: block;
     }
 }

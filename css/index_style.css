@@ -13,16 +13,11 @@ html{
         height: 100vh;
         width: 100%;
     }
-    .banner-text-position{
+    /* .banner-text-position{
         position: absolute;
         top: 10%;
         right: 5%;
-    }
-}
-
-
-.banner-img{
-    object-fit: cover;
+    } */
 }
 
 
@@ -30,7 +25,7 @@ html{
     object-fit: cover;
 }
 
-.banner-text-position{
+/* .banner-text-position{
     text-align: center;
     color: white;
     font-weight: bold;
@@ -48,9 +43,9 @@ html{
 	top: 10px;
 	left: -50px;
 	transform: rotate(-60deg);
-}
+} */
 
-.movedown{
+.banner img{
     position: absolute;
     left: 50%;
     width: 30px;
@@ -125,16 +120,16 @@ html{
 }
 
 .index-ring{
-    background-image: url('../source/171/IMG_6913.jpg');
+    background-image: url('../source/product/ring/four_ring.jpg');
 }
 
 
 .index-pendant{
-    background-image: url('../source/171//IMG_174.jpg');
+    background-image: url('../source/product/pendant/square.jpg');
 }
 
 .index-bracelet{
-    background-image: url('../source/171/IMG_4227.jpg');
+    background-image: url('../source/product/bracelet/twist.jpg');
 }
 
 .tex {
@@ -255,12 +250,12 @@ html{
         height: 100vh;
         position: relative;
     }
-    .banner-text-position{
+    /* .banner-text-position{
         position: absolute;
         top: 10%;
         right: 0;
         width: 70%;
-    }
+    } */
 
 
     /* -------- memory ------- */
@@ -349,15 +344,15 @@ html{
       /* ----- banner ----- */
     .banner{
         width: 100%;
-        height: 100vh;
+        height: calc(100vh - 60px);
         position: relative;
     }
-    .banner-text-position{
+    /* .banner-text-position{
         position: absolute;
         top: 10%;
         right: 0;
         width: 70%;
-    }
+    } */
 
 
     /* -------- memory ------- */
