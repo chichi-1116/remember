@@ -6,28 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <!-- 網頁title -->
-    <title>test</title>
+    <title>163x171</title>
     <link rel="stylesheet" href="./css/index_style.css" />
     <!-- 網頁icon -->
-    <link rel="icon" href="./source/R.ico" type="image/x-icon" />
+    <link rel="icon" href="./source/pageIcon.ico" type="image/x-icon" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <!-- <div id="load">
-
-        <div>G</div>
-        <div>N</div>
-        <div>I</div>
-        <div>D</div>
-        <div>A</div>
-        <div>O</div>
-        <div>L</div>
-        <img src="./source/logo3.png" alt="" class="loading-img">
-    </div> -->
-
+    <div id="load">
+        <div class="loading-letter">THIS</div>
+        <div class="loading-letter"></div>
+        <div class="loading-letter"></div>
+        <div class="loading-letter">IS</div>
+        <div class="loading-letter"></div>
+        <div class="loading-letter"></div>
+        <div class="loading-letter">S</div>
+        <div class="loading-letter">u</div>
+        <div class="loading-letter">r</div>
+        <div class="loading-letter">p</div>
+        <div class="loading-letter">r</div>
+        <div class="loading-letter">i</div>
+        <div class="loading-letter">s</div>
+        <div class="loading-letter">e</div>
+        <div class="loading-letter">!</div>
+        <!-- <img src="./source/logo3.png" alt="" class="loading-img"> -->
+    </div>
     <div class="wrapper">
         <!-- -----------left-------------- -->
 
@@ -37,13 +43,13 @@
         <!-- -----------------right--------------------- -->
         <div class="right">
             <!------------ banner ------------>
-            <div class="banner">
+            <!-- <div class="banner">
                 <video src="./source/171/banner.mov" playsinline autoplay muted type="video/mp4" height="100%"
                     width="100%" class="banner-video">
                 </video>
 
                 <img src="./source/view.png" alt="" class="movedown">
-            </div>
+            </div> -->
 
             <div class="banner">
                 <img class="topic" src="./source/171/IMG_9487.jpg" alt="">
@@ -53,7 +59,7 @@
             </div>
 
             <div class="banner">
-                <img class="topic" style="opacity: 0.7;" src="./source/171/IMG_6188.jpg" alt="">
+                <img class="topic2" src="./source/171/IMG_6188.jpg" alt="">
             </div>
 
             <!-- -------------內容------------- -->
@@ -108,10 +114,13 @@
                     </div>
                 </div>
 
+                <div class="ccc slide-in zoom-in">
+                    <p>你以為就只有這樣嗎～？</p>
+                    <p>重頭戲在後面～</p>
+                </div>
+
+
                 <div class="banner slide-in align-bottom">
-                    <!-- <video src="./source/171/0714.MOV" playsinline controls autoplay type="video/MOV" height="100%"
-                        width="100%" class="banner-video">
-                    </video> -->
                     <iframe src="https://www.youtube.com/embed/PQ0CtPsAhfE?si=GhyfYegDNNXfoDaW"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -122,7 +131,7 @@
                 <div class="memory slide-in zoom-in">
                     <p>嗨～我最愛的豬豬
                         <br />
-                        生日快樂～
+                        想不到吧～
                         <br />
                         在一起一年想說做個小小的成果發表（？
                         <br />
@@ -171,19 +180,33 @@
     <script src="./js/all.js"></script>
     <script>
         // 載入畫面
-        let $loading = $('#load');
-        let $body = $('body');
+        let $loading = $("#load");
+        let $body = $("body");
+
+        // 依序顯示 surprise 字母
+        $(document).ready(function () {
+            $(".loading-letter").css("opacity", 0);
+            $(".loading-letter").each(function (i) {
+                setTimeout(() => {
+                    $(this).animate({
+                        opacity: 1
+                    }, 400);
+                }, i * 100); // 每個字母間隔 150ms
+            });
+        });
 
         window.addEventListener("load", function () {
             $("#load img").animate({
-                "opacity": ".8"
-            }, 3000);
+                    opacity: ".8",
+                },
+                3000
+            );
             setTimeout(function () {
                 $loading.fadeOut(3000);
             }, 3000);
             setTimeout(function () {
                 $loading.remove();
-            }, 6000);
+            }, 6500);
         });
     </script>
 
