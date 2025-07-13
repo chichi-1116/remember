@@ -203,6 +203,7 @@
             );
             setTimeout(function () {
                 $loading.fadeOut(3000);
+                $(".wrapper").css("visibility", "visible"); // 這行是關鍵！
             }, 3000);
             setTimeout(function () {
                 $loading.remove();
