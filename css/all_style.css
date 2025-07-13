@@ -32,6 +32,10 @@ body h2 {
     padding-bottom: 30px;
 }
 
+.wrapper {
+  visibility: hidden;
+}
+
 /* 網頁捲軸【寬度】 */
 ::-webkit-scrollbar {
     width: 15px;
